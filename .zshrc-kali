@@ -137,3 +137,4 @@ cf() {
 
 alias fzf-w='find /usr/share/seclists /usr/share/wordlists /usr/share/wfuzz /usr/share/dirb -type f | fzf'
 alias fzf-wordlists='fzf-w'
+alias exegol='sudo -E $(which exegol)'
