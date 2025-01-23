@@ -119,6 +119,7 @@ tcp-log() {
         echo "[*] Launched tcpdump, don't forget to kill it :)"
 }
 
+# cd anywhere
 cf() {
   local file
 
@@ -134,6 +135,11 @@ cf() {
      fi
   fi
 }
+
+# add history
+grep -vhE "^\s*$" /home/vagrant/history.d/* >> /home/vagrant/.zsh_history
+
+source history.d/profile.sh
 
 alias fzf-w='find /usr/share/seclists /usr/share/wordlists /usr/share/wfuzz /usr/share/dirb -type f | fzf'
 alias fzf-wordlists='fzf-w'
