@@ -2,3 +2,4 @@ ffuf -fs 185 -c -w `fzf-wordlists` -H 'Host: FUZZ.machine.org' -u "http://$TARGE
 ffuf -fs 185 -c -w `fzf-wordlists` -H 'Host: FUZZ.org' -u "http://$TARGET/"
 ffuf -c -w `fzf-wordlists` -e .php,.txt,.pl,.sh,.asp,.aspx,.html,.json,.py,.cfm,.rb,.cgi,.bak,.tar.gz,.tgz,.zip -u "http://$TARGET/FUZZ"
 ffuf -c -w `fzf-wordlists` -u "http://$TARGET/FUZZ"
+ffuf -c -ic -t 10 -p 0.1 -w `fzf-wordlists` -u "http://$TARGET/FUZZ"
