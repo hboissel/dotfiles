@@ -36,7 +36,7 @@ cf() {
 # add history
 grep -vhE "^\s*$" /home/vagrant/history.d/* >> /home/vagrant/.zsh_history
 
-source '/home/vagrant/history.d/profile.sh'
+source '/home/vagrant/profile.sh'
 
 export PATH="$PATH:/home/vagrant/go/bin"
 
