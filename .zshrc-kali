@@ -43,3 +43,5 @@ export PATH="$PATH:/home/vagrant/go/bin"
 alias fzf-w='find /usr/share/seclists /usr/share/wordlists /usr/share/wfuzz /usr/share/dirb -type f | fzf'
 alias fzf-wordlists='fzf-w'
 alias exegol='sudo -E /home/vagrant/.local/bin/exegol'
+
+alias ffuf='ffuf -ic -c -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:95.0) Gecko/20100101 Firefox/95.0"'
